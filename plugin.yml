@@ -1,0 +1,8 @@
+name: macOS sandbox
+description: Execute command in macOS sandbox exec
+author: https://github.com/ray-project
+configuration:
+  properties:
+    - deny-file-read:
+      type: string
+  additionalProperties: false
