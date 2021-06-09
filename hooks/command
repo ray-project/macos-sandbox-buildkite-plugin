@@ -1,4 +1,4 @@
-set -ex
+set -x
 
 DENY_PATH=${BUILDKITE_PLUGIN_MACOS_SANDBOX_DENY_FILE_READ}
 sandbox-exec -p \
