@@ -1,6 +1,6 @@
 set -x
 
-su - ec2-user
+su ec2-user
 DENY_PATH=${BUILDKITE_PLUGIN_MACOS_SANDBOX_DENY_FILE_READ}
 sandbox-exec -p \
     "(version 1) (deny file-read* (subpath \"${DENY_PATH}\")) (allow default)" \
